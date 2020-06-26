@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text , View,StyleSheet} from 'react-native'
+import {Text , View,StyleSheet, TouchableOpacity} from 'react-native'
 
 
 export const Todo=({todo})=>{
@@ -19,6 +19,7 @@ const styles=StyleSheet.create({
 	padding:15,
 	borderWidth:1,
 	borderColor: '#eee',
-	borderRadius:5
+	borderRadius:5,
+		marginBottom:5
 	}
 });
