@@ -22,6 +22,7 @@ export const EditModal = ({visible, onCancel, value,onSave}) => {
 		       transparent={false}>
 			<View style={styles.wrap}>
 				<TextInput style={styles.input}
+				           value={title}
 				           onChangeText={setTitle}
 				           placeholder="Введите новое значение"
 				           autoCapitalize='none'
@@ -30,7 +31,7 @@ export const EditModal = ({visible, onCancel, value,onSave}) => {
 				/>
 				<View style={styles.buttons}>
 					<Button color={THEME.DANGER_COLOR} title='Отменить' onPress={onCancel}/>
-					<Button title='Сохранить'/>
+					<Button title='Сохранить' onPress={saveHandler}/>
 				</View>
 			</View>
 		</Modal>
